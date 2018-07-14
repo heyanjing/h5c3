@@ -1,0 +1,165 @@
+/*// HEINFO: 2018/7/13 16:36 top*/
+.top-container {
+    background-color : #FAFAFA;
+    border-bottom    : #dfdfdf 1px solid;
+}
+.top {
+    width       : 1000px;
+    height      : 30px;
+    margin      : 0 auto;
+    font        : 12px 微软雅黑, serif;
+    line-height : 30px;
+    color       : #888888;
+}
+.top-left {
+    float : left;
+}
+.top-right {
+    float : right;
+}
+.top-right li {
+    float       : left;
+    margin-left : 4px;
+}
+.top-right a {
+    color : #888888;
+}
+.top-right a:hover {
+    text-decoration : none;
+}
+/*// HEINFO: 2018/7/13 16:36 logo*/
+.logo-container {
+    width  : 1000px;
+    margin : 0 auto;
+}
+.logo {
+    height : 82px;
+    margin : 15px 0;
+}
+.logo-logo {
+    float : left;
+}
+.logo-text {
+    float      : right;
+    margin-top : 28px;
+}
+/*// HEINFO: 2018/7/13 17:08  nav*/
+.nav-container {
+    background-color : #05836E;
+    height           : 43px;
+}
+.nav {
+    width  : 1000px;
+    margin : 0 auto;
+    /*background-color :red;*/
+}
+.nav li {
+    float : left;
+    width : 11%;
+}
+.nav li > a {
+    display      : block;
+    width        : 100%;
+    height       : 43px;
+    line-height  : 43px;
+    color        : white;
+    font-weight  : bold;
+    text-align   : center;
+    border-right : #26ffae solid 1px;
+}
+.nav li:last-of-type > a {
+    border-right : none;
+}
+/*// HEINFO: 2018/7/13 17:53 content*/
+.content-container {
+    width  : 1000px;
+    margin : 0 auto;
+}
+.content-container > .cc-img {
+    margin-top : 5px;
+}
+.cc-content > .ccc-left {
+    width : 680px;
+    float : left;
+}
+.liuchengtitle {
+    width       : 680px;
+    height      : 70px;
+    text-align  : center;
+    line-height : 70px;
+    font-size   : 30px;
+    font-weight : bold;
+}
+.liucheng {
+    width      : 626px;
+    height     : 364px;
+    background : url("http://www.atguigu.com/pics/baoming.png");
+}
+.liuchengzi {
+    width       : 400px;
+    height      : 355px;
+    padding     : 5px 0 0 180px;
+    line-height : 50px;
+}
+.baoming {
+    height     : 54px;
+    text-align : center;
+}
+.baoming > img {
+
+}
+.abouttest {
+    width      : 602px;
+    height     : 263px;
+    margin-top : 20px;
+    border     : #888888 dashed 1px;
+    /*background-color :red;*/
+
+}
+.abouttesttitle {
+    height       : 40px;
+    line-height  : 40px;
+    padding-left : 10px;
+    color        : green;
+    font-weight  : bold;
+    font-size    : 20px;
+}
+.abouttestzi {
+    margin-left      : 10px;
+    text-indent      : 2em;
+    line-height      : 30px;
+    background-color : #DEDEDE;
+}
+.cc-content > .ccc-right {
+    width : 300px;
+    float : right;
+}
+.ccc-right > .cccr-top {
+    height           : 36px;
+    background-color : #F4F4F4;
+    border-top       : #05836E solid 2px;
+}
+.cccr-left {
+    float : left;
+}
+.cccr-right {
+    float : right;
+}
+.cccr-content {
+    border           : #888888 solid 1px;
+    background-color : #fff;
+}
+.cccrcc-left {
+    float : left;
+}
+.cccrcc-right {
+    float : right;
+}
+.cccrc-content > cccrcc-left {
+    width  : 163px;
+    height : 26px;
+}
+.cccrc-content > cccrcc-right {
+    width  : 58px;
+    height : 26px;
+}

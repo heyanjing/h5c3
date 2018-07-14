@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*// HEINFO: 2018/7/9 11:02 顺序必须时lvha，否则会有问题*/
+        a:link {
+            color : red;
+        }
+        a:visited {
+            color : black;
+        }
+        a:hover {
+            color : green;
+        }
+        a:active {
+            color : blue;
+        }
+        /*// HEINFO: 2018/7/9 11:02 */
+        input:focus {
+            background-color : skyblue;
+        }
+        /*// HEINFO: 2018/7/9 11:02 */
+        #first-letter:first-letter {
+            color     : red;
+            font-size : 40px;
+        }
+        #first-line:first-line {
+            color     : red;
+            font-size : 40px;
+        }
+        .before:before {
+            content   : "标签最前面的内容";
+            color     : red;
+            font-size : 40px;
+        }
+        .after:after {
+            content   : "标签最后面的内容";
+            color     : red;
+            font-size : 40px;
+        }
+        #div1 > p:first-child {
+            background-color : #ffff00;
+        }
+        #div1 > p:last-child {
+            background-color : #26ffae;
+        }
+        /*
+            even 偶数
+            odd  基数
+         */
+        #div1 > p:nth-child(2) {
+            background-color : #26ffae;
+        }
+        #div2 > span:first-of-type {
+            color : red;
+        }
+        #div2 > span:last-of-type {
+            color : blue;
+        }
+        /*
+           even 偶数
+           odd  基数
+        */
+        #div2 > span:nth-of-type(3) {
+            color : orange;
+        }
+        /*// HEINFO: 2018/7/9 11:02 */
+        #div3 > p:not(.no) {
+            background-color : red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="http://www.baidu.com">我是百度超链接</a>
+    </div>
+    <div>
+        <input title="提示" type="text">
+    </div>
+    <div id="div1">
+        <p id="first-letter">first-letter
+            <br>
+            IntelliJ IDEA 提供特殊的视图模式： 全屏模式：允许您使用整个屏幕进行编码。 这将从视图中删除所有菜单以及操作系统控件。但是，您可以使用上下文菜单和键盘快捷键。当您将鼠标指针悬停在屏幕顶部时， 主菜单也可用。 演示模式：类似于全屏模式，但它旨在进行与 IntelliJ IDEA 编码相关的演示。在这种模式下，IntelliJ IDEA 增加字体大小，并隐藏除编辑器以外的所有内容。如果需要，还可以使用视图中的相应项目在该视图中显示 View | Tool Windows 菜单。 无干扰模式：显示没有工具栏，没有工具窗口，没有编辑器选项卡，代码是中心对齐的，等等。
+        </p>
+        <p id="first-line">first-line
+            <br>
+            IntelliJ IDEA 提供特殊的视图模式： 全屏模式：允许您使用整个屏幕进行编码。 这将从视图中删除所有菜单以及操作系统控件。但是，您可以使用上下文菜单和键盘快捷键。当您将鼠标指针悬停在屏幕顶部时，主菜单也可用。 演示模式：类似于全屏模式，但它旨在进行与 IntelliJ IDEA 编码相关的演示。在这种模式下，IntelliJ IDEA 增加字体大小，并隐藏除编辑器以外的所有内容。如果需要，还可以使用视图中的相应项目在该视图中显示 View | Tool Windows 菜单。 无干扰模式：显示没有工具栏，没有工具窗口，没有编辑器选项卡，代码是中心对齐的，等等。
+        </p>
+        <p class="before after">before after</p>
+    </div>
+    <div id="div2">
+        <span>我是span1</span>
+        <span>我是span2</span>
+        <span>我是span3</span>
+        <span>我是span4</span>
+        <span>我是span5</span>
+    </div>
+    <div id="div3">
+        <p>我是一个p</p>
+        <p>我是一个p</p>
+        <p class="no">我是一个p</p>
+        <p>我是一个p</p>
+        <p>我是一个p</p>
+    </div>
+</body>
+</html>

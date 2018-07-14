@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            样式，变体，粗细，大小，家族
+            大小，家族必须存在
+        #p1{
+            font-style: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 微软雅黑,serif;
+        }
+        */
+        #p1 {
+            font : italic small-caps bold 20px/2em 微软雅黑, serif;
+        }
+        #p2 {
+            text-decoration : red wavy underline;
+            letter-spacing  : 2px;
+            word-spacing    : 20px;
+            text-transform  : capitalize;
+            text-align      : center;
+            text-indent     : 2em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1">关于字体font的样式ABCDabcd</p>
+    </div>
+    <div>
+        <p id="p2">所有浏览器均支持 CSS2.1 中的text-decoration属性，在CSS3中，该属性定义被移植到其新的分解属性所有浏览器均支持 CSS2.1 中的text-decoration属性，在CSS3中，该属性定义被移植到其新的分解属性所有浏览器均支持 CSS2.1 中的text-decoration属性，在CSS3中，该属性定义被移植到其新的分解属性
+            <br>
+            text-decoration-line上；Go downhill on your bike or jump from a plane. Take Away English talks about the sports for people who love danger.
+        </p>
+    </div>
+</body>
+</html>

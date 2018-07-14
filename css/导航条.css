@@ -1,0 +1,23 @@
+ul {
+    width            : 80%;
+    background-color : #548FE8;
+    margin           : 0 auto;
+}
+li {
+    width       : 25%;
+    height      : 40px;
+    font-size   : 20px;
+    line-height : 40px;
+    float       : left;
+}
+a {
+    display    : block;
+    width      : 100%;
+    text-align : center;
+}
+a:hover {
+    background-color : #26ffae;
+}
+a:active {
+    background-color : red;
+}

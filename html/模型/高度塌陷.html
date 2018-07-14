@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container {
+            border : red dashed 10px;
+        }
+        #c-content {
+            width            : 100px;
+            height           : 100px;
+            background-color : #26ffae;
+            float            : left;
+        }
+        .clearfix:after {
+            content : "";
+            display : block;
+            clear   : both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div id="c-content"></div>
+    </div>
+    <div style="height: 100px;background-color:green;clear: left"></div>
+</body>
+</html>

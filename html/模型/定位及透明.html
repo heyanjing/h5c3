@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width  : 100px;
+            height : 100px;
+        }
+        .red {
+            background-color : red;
+
+        }
+        .green {
+            background-color : green;
+
+        }
+        .blue {
+            background-color : blue;
+
+        }
+        /*// HEINFO: 2018/7/14 14:44 */
+        #div11 {
+            /*position: absolute;*/
+            position : relative;
+        }
+        #div12 {
+            /*position: absolute;*/
+            position : relative;
+            left     : 50px;
+            top      : -50px;
+        }
+        #div13 {
+            /*position: absolute;*/
+            position : relative;
+            left     : 100px;
+            top      : -100px;
+        }
+        /*// HEINFO: 2018/7/14 14:44 */
+
+        #div21 {
+            position : absolute;
+            z-index  : 30;
+        }
+        #div211 {
+            position : absolute;
+            z-index  : 3;
+        }
+        /*// HEINFO: 2018/7/14 14:44 */
+        #div31 {
+            position : relative;
+        }
+        #div32 {
+            position : relative;
+            left     : 50px;
+            top      : -50px;
+        }
+        #div33 {
+            position : relative;
+            left     : 100px;
+            top      : -100px;
+            /*非ie8的透明*/
+            opacity  : 0.2;
+            /*ie8独有的透明*/
+            filter   : alpha(opacity=0.2);
+        }
+    </style>
+</head>
+<body>
+    <h2>position定位层级相同，下面的元素遮挡上面的元素</h2>
+    <div id="div1" style="background-color: skyblue;height: 200px">
+        <div id="div11" class="container red">111111</div>
+        <div id="div12" class="container green">2222222</div>
+        <div id="div13" class="container blue">333333</div>
+    </div>
+    <hr>
+    <h2>position定位，父元素的层级再高也不会遮挡子元素</h2>
+    <div id="div2" style="background-color: skyblue; height: 300px">
+        <div id="div21" class="container red">
+            <div id="div211" style="width: 50px;height: 50px;background-color: orange;"></div>
+        </div>
+    </div>
+    <hr>
+    <h2>opacity的透明效果</h2>
+    <div id="div3" style="background-color: skyblue;height: 200px">
+        <div id="div31" class="container red">111111</div>
+        <div id="div32" class="container green">2222222</div>
+        <div id="div33" class="container blue">333333</div>
+    </div>
+</body>
+</html>

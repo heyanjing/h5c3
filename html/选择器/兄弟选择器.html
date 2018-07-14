@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            后面相邻兄弟
+        */
+        div + span {
+            color : red;
+        }
+        /*
+            后面所有兄弟
+        */
+        #span1 ~ p {
+            color : blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span id="span1">我是div标签中的span</span>
+        <p>
+            <span>我是p标签中的span</span>
+        </p>
+        <p>
+            <span>我是p标签中的span</span>
+        </p>
+    </div>
+    <span>我是body标签中的span</span>
+</body>
+</html>

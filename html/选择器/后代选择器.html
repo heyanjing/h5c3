@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            子元素
+        */
+        div > span {
+            color : red;
+        }
+        /*
+            后代元素
+        */
+        div span {
+            background-color : aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>我是div标签中的span</span>
+        <p>
+            <span>我是p标签中的span</span>
+        </p>
+    </div>
+    <span>我是body标签中的span</span>
+</body>
+</html>

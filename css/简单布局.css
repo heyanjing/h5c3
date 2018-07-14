@@ -1,0 +1,47 @@
+/*div{*/
+/*border: red dashed 1px;*/
+/*}*/
+.container {
+    width  : 80%;
+    margin : 0 auto;
+}
+.head-container {
+    background-color : red;
+    height           : 100px;
+}
+.content-container {
+    height           : 300px;
+    background-color : green;
+    margin-top       : 10px;
+    margin-bottom    : 10px;
+}
+.footer-container {
+    height           : 160px;
+    background-color : blue;
+}
+/*// HETODO: 2018/7/13 9:31 垂直居中未做*/
+.cc-container {
+    width            : 90%;
+    height           : 90%;
+    margin           : 0 auto;
+    /*margin-top       : 5%;*/
+    background-color : black;
+    /*float: left;*/
+}
+.float-left {
+    float  : left;
+    height : 100%;
+}
+.cc-left {
+    width            : 20%;
+    background-color : #26ffae;
+}
+.cc-center {
+    width            : 58%;
+    background-color : aqua;
+    margin           : 0 1%;
+}
+.cc-right {
+    width            : 20%;
+    background-color : bisque;
+}
