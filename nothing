@@ -1,0 +1,2 @@
+/*可以同时解决高度塌陷和外边距重叠*/
+.clearfix:before{ content : ""; display : table;}
