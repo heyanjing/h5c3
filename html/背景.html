@@ -6,22 +6,44 @@
     <style>
         /*
         一般情况下制定了背景图片时也会同时设置背景颜色
+        background-attachment: fixed;的圆点为浏览器左上角
+        background-attachment使用的话一般也用于body元素上，且fixed这个值是的圆点位置是浏览器的左上角
         */
-        #div1 {
-            width      : 800px;
-            height     : 600px;
-            /*background-color : #bfa;*/
-            /*background-image : url(../img/small.jpg);*/
-            /*background-repeat: round;*/
-            /*background-position: center;*/
-            /*background : #bfa url("../img/small.jpg") round;*/
-            /*background-attachment: scroll;*/
-            background : #bfa url("../img/small.jpg") no-repeat center fixed;
-            border     : 10px #05836E dashed;
+
+        /*背景在一个div中*/
+           /*#div1 {*/
+            /*width      : 1000px;*/
+            /*height     : 600px;*/
+            /*!*background-color : #bfa;*!*/
+            /*!*background-image : url(../img/small.jpg);*!*/
+            /*!*background-repeat: round;*!*/
+            /*!*background-position: center;*!*/
+            /*!*background : #bfa url("../img/small.jpg") round;*!*/
+            /*!*background-attachment: scroll;*!*/
+            /*background : #bfa url("../img/small.jpg") no-repeat  fixed;*/
+            /*border     : 10px #05836E dashed;*/
+            /*margin: 0  auto;*/
+            /*overflow: auto;*/
+        /*}*/
+        /*背景在body中*/
+        /*body{*/
+            /*background: red url("../img/small.jpg") no-repeat center fixed;*/
+        /*}*/
+        /*雪碧图*/
+          #sprite{
+              width : 118px;
+              height : 50px;
+              background: url("../img/sprite2.png") no-repeat 0 -235px ;
+          }
+        #sprite:hover{
+            background-position: -126px -235px;
         }
     </style>
 </head>
-<body>
-    <div id="div1"></div>
+<body style="height: 5000px">
+    <!--<div id="div1">-->
+        <!--<div style="height: 1000px"></div>-->
+    <!--</div>-->
+    <div id="sprite"></div>
 </body>
 </html>
