@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            三列布局
+            左右固定，中间自适应
+            中间列内容完全显示
+            中间列要最先加载
+
+           实现逻辑：
+            1、使用浮动搭建基础布局
+            2、使用外边距完成三列
+            3、在html机构中添加一层，再使用外边距
+
+
+        */
+        * {
+            margin  : 0px;
+            padding : 0px;
+        }
+        body {
+            min-width : 600px;
+        }
+        .head, .footer {
+            height           : 100px;
+            background-color : grey;
+            text-align       : center;
+        }
+        .container {
+            /*padding  : 0 200px;*/
+            overflow : hidden;
+        }
+        .container .left, .container .right {
+            width      : 200px;
+            text-align : center;
+        }
+        .container .middle, .container .left, .container .right {
+            padding-bottom : 9999px;
+            margin-bottom  : -9999px;
+            float          : left;
+        }
+        .container .left {
+            background-color : dodgerblue;
+            margin-left      : -100%;
+            /*position         : relative;*/
+            /*left             : -200px;*/
+        }
+        .container .right {
+            background-color : deepskyblue;
+            margin-left      : -200px;
+            /*position         : relative;*/
+            /*right            : -200px;*/
+        }
+        .container .middle {
+            background-color : cornflowerblue;
+            width            : 100%;
+        }
+        .container .middle .content {
+            padding : 0 200px;
+        }
+        body {
+            /*最小宽度为3倍固定值*/
+            min-width : 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h4>head</h4>
+    </div>
+    <div class="container">
+        <div class="middle ">
+            <div class="content">
+                <h3>middle</h3>
+            </div>
+        </div>
+        <div class="left ">
+            <h3>left</h3>
+        </div>
+        <div class="right ">
+            <h3>right</h3>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>footer</h4>
+    </div>
+</body>
+</html>

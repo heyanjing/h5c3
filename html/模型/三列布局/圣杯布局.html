@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            三列布局
+            左右固定，中间自适应
+            中间列内容完全显示
+            中间列要最先加载
+
+           实现逻辑：
+            1、使用浮动搭建基础布局
+            2、使用外边距完成三列
+            3、使用相对定位调整位置
+
+
+        */
+        * {
+            margin  : 0px;
+            padding : 0px;
+        }
+        .head {
+            height           : 100px;
+            background-color : grey;
+            text-align: center;
+        }
+        .footer {
+            height           : 100px;
+            background-color : grey;
+            text-align: center;
+        }
+        .container {
+            padding  : 0 200px;
+            overflow : hidden;
+        }
+        .left, .right {
+            width : 200px;
+        }
+        .left {
+            background-color : dodgerblue;
+            margin-left      : -100%;
+            position         : relative;
+            left             : -200px;
+        }
+        .right {
+            background-color : deepskyblue;
+            margin-left      : -200px;
+            position         : relative;
+            right            : -200px;
+        }
+        .middle {
+            background-color : cornflowerblue;
+            width            : 100%;
+        }
+        .float-left {
+            float : left;
+        }
+        .container .middle, .container .left, .container .right {
+            padding-bottom : 9999px;
+            margin-bottom  : -9999px;
+        }
+        body {
+            /*最小宽度为3倍固定值*/
+            min-width : 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">head</div>
+    <div class="container">
+        <div class="middle float-left">
+            <h3>middle</h3>
+            <h3>middle</h3>
+            <h3>middle</h3>
+            <h3>middle</h3>
+            <h3>middle</h3>
+        </div>
+        <div class="left float-left">left</div>
+        <div class="right float-left">right</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

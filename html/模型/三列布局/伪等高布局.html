@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+
+
+        */
+        .clearfix:after, .clearfix:before {
+            display : table;
+            content : "";
+            clear   : both;
+        }
+        * {
+            margin  : 0;
+            padding : 0;
+        }
+        .container {
+            width  : 800px;
+            border : blue dashed 1px;
+            margin : 0 auto;
+            overflow: hidden;
+        }
+        .container .left {
+            width            : 200px;
+            background-color : pink;
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+        .container .right {
+            width            : 600px;
+            background-color : deeppink;
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="left float-left">
+            <h4>left</h4>
+            <h4>left</h4>
+            <h4>left</h4>
+            <h4>left</h4>
+            <h4>left</h4>
+        </div>
+        <div class="right float-left">
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+            <h4>right</h4>
+        </div>
+    </div>
+</body>
+</html>
