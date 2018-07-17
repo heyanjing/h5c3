@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* ul{
+             list-style: none;
+         }*/
+    </style>
+</head>
+<body>
+    <form action="/web" method="get">
+        <fieldset>
+            <legend>输入型</legend>
+            <div>
+                <label for="userName">用户名：</label>
+                <input list="cars" id="userName" type="text" name="userName" placeholder="请输入账号"/>
+                <datalist id="cars">
+                    <option value="admin">
+                    <option value="市局管理员">
+                    <option value="九龙坡局管理员">
+                    <option value="中介机构管理员">
+                    <option value="建设机构管理员">
+                </datalist>
+            </div>
+            <div>
+                <label for="password">密码：</label>
+                <input id="password" type="password" name="password" placeholder="请输入密码"/>
+            </div>
+            <div>
+                <label for="resume">个人简介：</label>
+                <textarea name="resume" id="resume" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>选择型</legend>
+            <div>
+                <label>性别：</label>
+                <label for="male">男</label>
+                <input id="male" type="radio" name="sex" value="male" checked/>
+                <label for="female">女</label>
+                <input id="female" type="radio" name="sex" value="female"/>
+            </div>
+            <div>
+                <label>爱好：</label>
+                <input id="football" type="checkbox" name="hobby" value="football"/>
+                <label for="football">足球</label>
+                <input id="basketball" type="checkbox" name="hobby" value="basketball"/>
+                <label for="basketball">篮球</label>
+                <input id="badminton" type="checkbox" name="hobby" value=" badminton" checked/>
+                <label for="badminton">羽毛球</label>
+            </div>
+            <div>
+                <label for="photo"> 个人照片：</label>
+                <input id="photo" type="file" name="photo" placeholder="请输入密码"/>
+            </div>
+            <div>
+                <label for="education">学历：</label>
+                <!--multiple-->
+                <select name="education" id="education">
+                    <optgroup label="公立">
+                        <option value="1">大学</option>
+                        <option value="2" selected>中学</option>
+                        <option value="3">小学</option>
+                    </optgroup>
+                    <optgroup label="私立">
+                        <option value="1">大学</option>
+                        <option value="2" selected>中学</option>
+                        <option value="3">小学</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <input id="submit" type="submit" value="提交"/>
+            <input id="reset" type="reset" value="重置"/>
+            <input id="btn" type="button" value="按钮"/>
+            <button type="submit">提交按钮</button>
+            <button type="reset">重置按钮</button>
+            <button type="button">按钮</button>
+        </div>
+    </form>
+</body>
+</html>
