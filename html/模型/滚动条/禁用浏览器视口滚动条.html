@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            浏览器默认的滚动条是在视口上的，只有视口上的滚动条可以移动初始化包含块
+            html或body中只有有一个设置了overflow:scroll，则这个滚动条最终都是出现在视口上的
+            html和body都设置overflow，则html上的会影响视口，body上的只会影响body本身
+
+        */
+        /** {*/
+        /*margin  : 0;*/
+        /*padding : 0;*/
+        /*}*/
+        html {
+            border   : red dashed 2px;
+            height   : 100%;
+            overflow : hidden;
+        }
+        body {
+            border   : blue dashed 2px;
+            height   : 100%;
+            overflow : scroll;
+        }
+        /*使用决定定位模拟fixed
+            因为绝对定位的参考对象时初始包含快，而body上的滚动条不会移动初始包含快
+        */
+        .text {
+            width            : 100px;
+            height           : 100px;
+            background-color : deeppink;
+            position         : absolute;
+            top              : 100px;
+            left             : 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text"></div>
+    <div style="height: 10000px"></div>
+</body>
+</html>
