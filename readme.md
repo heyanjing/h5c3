@@ -87,3 +87,5 @@
 
 ## 一般情况下制定了背景图片时也会同时设置背景颜色,background-attachment使用的话一般也用于body元素上，且fixed这个值是的圆点位置是浏览器的左上角
 
+## frameset不能够和body出现在同一个页面中
+
