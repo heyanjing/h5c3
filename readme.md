@@ -1,14 +1,22 @@
-## 页面中元素都有一个隐含的属性Block Formatting Context，简称BFC
+## Block Formatting Context，简称BFC；他是一个容器，只管理他内部的盒子
+
++ 布局规则
+  1. 内部的box会在垂直方向一个一个的放置
+  2. BFC的区域不会与float box重叠(两列布局)
+  3. 内部的box垂直方向的距离由margin决定，属于同一个BFC的两个相邻（指的时外边距相邻）box的margin会发生重叠(兄弟元素或子父元素的外边距重叠)
+  4. 计算BFC的高度时，浮动元素也参与计算
+  5. BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之也如此
++ BFC什么时候出现或开启元素的BFC
+  1. 根元素（html）
+  2. float属性不为none
+  3. positon为absolute或fixed
+  4. overflow不为visible
+  5. display为table,inline-block，table-cell,table-caption,flex,inline-flex
 
 + 开启后有特点如下
   1. 父元素的垂直外边距不会和子元素重叠
   2. 不会被浮动元素遮盖
   3. 可以包含浮动的子元素
-+ 如何开启
-  1. 设置元素浮动
-  2. 设置元素绝对定位
-  3. 设置元素为inline-bolck
-  4. 将元素的overflow设置为一个非visible的值
 
 # 浮动和绝对定位可以使元素脱离文档流，脱离文档流后的元素都是块元素，该元素的宽高默认由内容撑开
 

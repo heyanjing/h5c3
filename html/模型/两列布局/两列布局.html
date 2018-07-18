@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            两列列布局
+           左边固定，右边自适应
+
+
+        */
+        * {
+            margin  : 0px;
+            padding : 0px;
+        }
+        .left {
+            width            : 200px;
+            height           : 200px;
+            /*opacity          : 0.7;*/
+            background-color : skyblue;
+            float            : left;
+        }
+        .right {
+            height           : 200px;
+            background-color : dodgerblue;
+            overflow         : auto;
+            padding-left     : 20px;
+        }
+        body {
+            min-width : 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h3>left</h3>
+    </div>
+    <div class="right">
+        <h3>right</h3>
+    </div>
+</body>
+</html>

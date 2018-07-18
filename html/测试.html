@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin  : 0;
+            padding : 0;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 300px;background-color: #dfdfdf;">
+        <h3>盒子边界:盒子与盒子的摆放依据的是盒子的边界margin(margin的调整不影响元素本身的位置)</h3>
+        <div style="width: 300px;height: 100px;background-color: pink;margin-bottom: -90px">第一个box</div>
+        <div style="width: 300px;height: 100px;background-color: deeppink;">第二个box</div>
+    </div>
+    <div style="height: 300px;background-color: skyblue;">
+        <h3>外边距重叠</h3>
+        <div style="width: 300px;height: 100px;background-color: pink;margin-bottom: 20px">第一个boxmargin-bottom: 20px</div>
+        <div style="display: table"></div>
+        <div style="width: 400px;height: 100px;background-color: deeppink;margin-top: 20px">第二个boxmargin-top: 20px</div>
+    </div>
+    <div style="height: 300px;background-color: #dfdfdf;">
+        <h3>盒子边界:盒子与盒子的摆放依据的是盒子的边界margin(margin的调整不影响元素本身的位置)</h3>
+        <div style="width: 300px;height: 100px;background-color: pink;margin-bottom: -90px">第一个box</div>
+        <div style="width: 300px;height: 100px;background-color: deeppink;">第二个box</div>
+    </div>
+    <div style="height: 300px;background-color: skyblue;">
+        <h3>浮动两层:下一层盒子，上一次文字</h3>
+        <div style="width: 300px;height: 100px;background-color: pink;float: left;">第一个box浮动</div>
+        <div style="width: 400px;height: 100px;background-color: deeppink;">第二个box的盒子不见了，文字还在；当第二个盒子的内容区域再多点时，可以放下部分文字</div>
+    </div>
+</body>
+</html>
