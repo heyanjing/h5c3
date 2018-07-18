@@ -1,5 +1,5 @@
-
 ### 视口、初始包含快、html、body
+
 ### [盒子与盒子的排列是以盒子的边界margin为界限的]()
 
 ### 滚动条
@@ -30,5 +30,10 @@
 + 百分比参照于谁
   1. width margin padding left:包含块的width
   2. height top:包含块的height
-
 + 只有在浮动时考虑元素分分两层的问题（上层文字，下层盒模型），同时浮动提升半个层级
+
+### 字体
+1. font-size默认16px，最小12px
+2. 处理文本时，建议把行高设置得比字体大
+3. 行高的百分比参照字体大小
+4. 超出文本省略号white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: block
