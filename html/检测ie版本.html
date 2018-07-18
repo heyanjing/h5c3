@@ -9,11 +9,17 @@
     <h2>利用一个函数检测ie版本</h2>
 </body>
 <script type="text/javascript">
+    /**
+     * 适用于检测IE 9 及其以下的IE 版本检测
+     * @param version
+     * @returns {boolean}
+     */
     function isIE(version) {
         var b = window.document.createElement("b");
         b.innerHTML = "<!--[if IE " + version + "]><i></i><![endif]-->";
         return b.getElementsByTagName("i").length === 1;
     }
-    console.log(isIE(8));
+
+    console.log(isIE(10));
 </script>
 </html>
