@@ -11,8 +11,8 @@
 ### 绝对定位盒子的特性
 
 1. 宽高有内容撑开
-2. 水平方向上：left+right+width+padding +margin=包含块padding区域的尺寸
-   水平方向上：top+bottom+height+padding +margin=包含块padding区域的尺寸
+2. 水平方向上：left+right+width+padding+margin=包含块padding区域的尺寸(width+padding)
+   水平方向上：top+bottom+height+padding+margin=包含块padding区域的尺寸(height+padding)
 
 ### 概念
 
@@ -33,7 +33,9 @@
 + 只有在浮动时考虑元素分分两层的问题（上层文字，下层盒模型），同时浮动提升半个层级
 
 ### 字体
+
 1. font-size默认16px，最小12px
 2. 处理文本时，建议把行高设置得比字体大
 3. 行高的百分比参照字体大小
-4. 超出文本省略号white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: block
+4. 超出文本省略号white-space: nowrap;overflow: hidden;text-overflow:
+   ellipsis;display: block
