@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin  : 0;
+            padding : 0;
+        }
+        .wrap1 {
+            width  : 60px;
+            height :200px;
+            border : 1px solid;
+            overflow: hidden;
+        }
+        .inner1 {
+            height :20000px;
+            background-image : repeating-linear-gradient(-45deg,black 0,black 10px,white 10px,white 20px);
+            transition: 200s;
+        }
+         .inner1:hover{
+            margin-top: -19800px;
+        }
+        .wrap2{
+            height : 400px;
+            background-color : black;
+            text-align: center;
+        }
+        .inner2{
+            display: inline-block;
+            color: rgba(255,255,255,.3);
+            font-size: 80px;
+            font-family: 微软雅黑;
+            font-weight: bold;
+            margin-top: 60px;
+            background :linear-gradient(130deg,rgba(255,255,255,0) 0px,rgba(255,255,255,1) 100px,rgba(255,255,255,0) 200px);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            transition: 2s;
+        }
+        .inner2:hover{
+            background-position-x: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap1">
+        <div class="inner1"></div>
+    </div>
+    <div class="wrap2">
+        <div class="inner2">光斑特效光斑特效</div>
+    </div>
+</body>
+</html>
