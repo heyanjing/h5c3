@@ -1,0 +1,35 @@
+.wrap {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid red;
+  position: relative;
+}
+.wrap .inner1 {
+  height: 300px;
+  width: 200px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.wrap .inner1:hover {
+  background-color: pink;
+}
+.wrap .inner2 {
+  height: 150px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.wrap .inner2:hover {
+  background-color: green;
+}

@@ -1,0 +1,20 @@
+.wrap {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid red;
+  position: relative;
+}
+.wrap .inner1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-width: 150px;
+  border-color: blue bisque bisque bisque;
+  border-style: solid dashed dashed dashed;
+}
