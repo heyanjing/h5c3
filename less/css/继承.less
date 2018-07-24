@@ -1,0 +1,37 @@
+@blue : blue;
+@red : red;
+@pink : pink;
+@yellow : yellow;
+//混合
+.innerMixin(@width:150px,@height:100px,@color:black,@hoverColor:green) {
+  height           : @width;
+  width            : @height;
+  background-color : @color;
+  &:hover {
+    background-color : @hoverColor;
+  }
+}
+.center {
+  position : absolute;
+  top      : 0;
+  bottom   : 0;
+  left     : 0;
+  right    : 0;
+  margin   : auto;
+}
+.wrap {
+  height   : 400px;
+  width    : 600px;
+  margin   : 0 auto;
+  border   : 1px solid red;
+  position : relative;
+  .inner {
+    &:extend(.center);
+    &:nth-child(1) {
+      .innerMixin(300px, 200px, @red, @pink);
+    }
+    &:nth-child(2) {
+      .innerMixin(@color: @blue);
+    }
+  }
+}

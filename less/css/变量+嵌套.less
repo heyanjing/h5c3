@@ -1,0 +1,40 @@
+/*该注释会编译到css中*/
+//该注释不会编译到css中
+
+
+
+
+
+
+//定义变量
+@color : blue;
+@absolute : absolute;
+//定义属性变量（一般不用）
+@position : position;
+//定义选择器变量（一般不用）
+@selector : .wrap;
+
+//选择器变量和属性变量的使用
+@{selector} {
+  height   : 400px;
+  width    : 600px;
+  margin   : 0 auto;
+  border   : 1px solid red;
+  position : relative;
+  .inner1 {
+    height           : 300px;
+    width            : 200px;
+    background-color : @color;
+    //选择器变量和属性变量的使用
+      @{position}    : @absolute;
+    top              : 0;
+    bottom           : 0;
+    left             : 0;
+    right            : 0;
+    margin           : auto;
+    //伪元素或伪类的使用
+    &:hover {
+      background-color : red;
+    }
+  }
+}

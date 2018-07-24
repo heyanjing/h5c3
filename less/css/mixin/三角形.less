@@ -1,0 +1,31 @@
+//匹配模式
+.sanjiaoxing(@_,@width,@color) {
+  position : absolute;
+  top      : 0;
+  bottom   : 0;
+  left     : 0;
+  right    : 0;
+  margin   : auto;
+  width    : 0;
+  height   : 0;
+}
+.sanjiaoxing(bottom,@width,@color) {
+  border-width : @width;
+  border-color : @color bisque bisque bisque;
+  border-style : solid dashed dashed dashed;
+}
+.sanjiaoxing(left,@width,@color) {
+  border-width : @width;
+  border-color : bisque @color bisque bisque;
+  border-style : dashed solid dashed dashed;
+}
+.sanjiaoxing(top,@width,@color) {
+  border-width : @width;
+  border-color :  bisque bisque @color bisque;
+  border-style :  dashed dashed solid dashed;
+}
+.sanjiaoxing(right,@width,@color) {
+  border-width : @width;
+  border-color :  bisque bisque bisque @color;
+  border-style :  dashed dashed dashed solid;
+}
