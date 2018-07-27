@@ -1,0 +1,7 @@
+{
+  "name": "nodeX",
+  "version": "0.0.1",
+  "dependencies": {
+    "mongoose": "^5.2.5"
+  }
+}
